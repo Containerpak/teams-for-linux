@@ -5,5 +5,5 @@ COPY icon.png /usr/share/icons/hicolor/128x128/apps/teams-for-linux.png
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libasound2t64 libgtk-3-0 libnss3 && \
-    dpkg-deb -x /tmp/source / && \
+    dpkg-deb -x /tmp/source / && ln -s /opt/teams-for-linux/teams-for-linux /usr/bin/teams-for-linux && \
     cpak-clean-junk
