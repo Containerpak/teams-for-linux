@@ -3,7 +3,7 @@
   "manifest_version": "2.0",
   "name": "Portal for Teams",
   "description": "Use Microsoft Teams from a Linux desktop client.",
-  "version": "2.14.1",
+  "version": "2.17.0",
   "image": "ghcr.io/containerpak/teams-for-linux:main",
   "binaries": [
     "/usr/bin/teams-for-linux"
