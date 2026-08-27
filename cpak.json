@@ -4,7 +4,7 @@
   "name": "Portal for Teams",
   "description": "Use Microsoft Teams from a Linux desktop client.",
   "version": "2.18.1",
-  "image": "ghcr.io/containerpak/teams-for-linux@sha256:8bedff9bce164b863d59314387d28dde4b36e2ae5f7b93978a5815d35622d4c5",
+  "image": "ghcr.io/containerpak/teams-for-linux@sha256:68008d40732a6f12e7840ab93871c969aad109a057c43e08bf2bb045e3fcf474",
   "binaries": [
     "/usr/bin/teams-for-linux"
   ],
