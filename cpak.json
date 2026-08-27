@@ -1,34 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Portal for Teams",
   "description": "Use Microsoft Teams from a Linux desktop client.",
   "version": "2.18.1",
-  "image": "ghcr.io/containerpak/teams-for-linux:main",
+  "image": "ghcr.io/containerpak/teams-for-linux@sha256:cdd2cbb89b23b9d297e558b64f0d170a7dc32b42534833c7b1bf09a5a082e2cb",
   "binaries": [
     "/usr/bin/teams-for-linux"
   ],
   "desktop_entries": [
     "/usr/share/applications/teams-for-linux.desktop"
   ],
-  "dependencies": [
-
-  ],
-  "addons": [
-
-  ],
+  "dependencies": [],
+  "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": true,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": false,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -46,18 +37,13 @@
         "access": "read-write"
       }
     ],
-    "env": [
-
-    ],
+    "env": [],
     "network": true,
     "process": false,
     "userNamespaces": true,
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": [
-
-    ]
+    "asRoot": false
   }
 }
