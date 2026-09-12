@@ -1,6 +1,6 @@
 FROM ubuntu:26.04 AS source
 
-ADD --checksum=sha256:c2c727faff235a4901496f42d0e0348ea62ebe278074319b0f70757b457f426b https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.20.0/teams-for-linux_2.20.0_amd64.deb /tmp/source
+ADD --checksum=sha256:62ee5733dc35cfad84ecc6fe15f09fd74e518ec91eefd0759bae60c775e74d8d https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.20.1/teams-for-linux_2.20.1_amd64.deb /tmp/source
 
 FROM ghcr.io/containerpak/gtk3:main
 
